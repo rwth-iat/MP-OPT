@@ -594,9 +594,18 @@ def _inject_xml_model_pi(xml_str: str) -> str:
         return xml_str[:first_nl] + "\n" + pi + xml_str[first_nl:]
     return pi + xml_str
 
-def save_general_recipe_xml(schedule: List[Dict], order: Dict) -> str:
+def save_general_recipe_xml(
+    schedule: List[Dict],
+    order: Dict,
+    out_dir: str | None = None,
+) -> str:
     """
-    Save pretty-printed General Recipe XML into the script directory.
+    Save pretty-printed General Recipe XML.
+
+    Args:
+        schedule: Generated process schedule.
+        order: Source order definition used to build the General Recipe.
+        out_dir: Optional override. If None, defaults to <ScriptDir>/Recipe/XML.
     """
     tree = build_general_recipe_tree(schedule, order)
 
@@ -620,9 +629,11 @@ def save_general_recipe_xml(schedule: List[Dict], order: Dict) -> str:
         return f"{base}"
 
     flow_id = _grecipe_id_from_flow_local(schedule)
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    
-    xml_output_dir = os.path.join(script_dir, "Recipe", "XML")
+    if out_dir:
+        xml_output_dir = out_dir
+    else:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        xml_output_dir = os.path.join(script_dir, "Recipe", "XML")
     
     os.makedirs(xml_output_dir, exist_ok=True)
     
