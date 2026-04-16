@@ -1,1 +1,1 @@
-"""Supporting modules used by the MP-OPT notebooks."""
+"""Supporting modules used by the ModPlant-OPT notebooks."""

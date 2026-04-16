@@ -1,6 +1,6 @@
-# MP-OPT
+# ModPlant-OPT
 
-`MP-OPT` is a notebook-first companion repository for the paper *Optimal Executable Process Plan Generation for Capability-Constrained Modular Plants*.
+`ModPlant-OPT` is a notebook-first companion repository for the paper *Optimal Executable Process Plan Generation for Capability-Constrained Modular Plants*.
 
 This repository is intentionally lightweight. Instead of packaging the project as an installable library, it keeps the workflow close to the original research setup:
 
@@ -11,14 +11,14 @@ This repository is intentionally lightweight. Instead of packaging the project a
 
 ## Primary Entry Points
 
-- [MP-OPT.ipynb](MP-OPT.ipynb)
+- [ModPlant-OPT.ipynb](ModPlant-OPT.ipynb)
   Main notebook for the modular-plant BFS + optimization workflow.
 - [batch_runner.ipynb](batch_runner.ipynb)
-  Notebook used to run many seeds in batch mode by extracting code from `MP-OPT.ipynb`.
+  Notebook used to run many seeds in batch mode by extracting code from `ModPlant-OPT.ipynb`.
 
 ## Included Files
 
-- `MP-OPT.ipynb`
+- `ModPlant-OPT.ipynb`
 - `batch_runner.ipynb`
 - `supporting_scripts/ModPlant_Flow_Generator.py`
 - `supporting_scripts/ModPlant_Flow_To_General_Recipe.py`
@@ -61,8 +61,8 @@ Optional:
 ## Usage
 
 1. Open Jupyter from the repository root.
-2. Start with [MP-OPT.ipynb](MP-OPT.ipynb) for the main workflow.
-3. Use [batch_runner.ipynb](batch_runner.ipynb) for seed sweeps. It reads `MP-OPT.ipynb` directly from the repository root.
+2. Start with [ModPlant-OPT.ipynb](ModPlant-OPT.ipynb) for the main workflow.
+3. Use [batch_runner.ipynb](batch_runner.ipynb) for seed sweeps. It reads `ModPlant-OPT.ipynb` directly from the repository root.
 4. Keep the helper `.py` files inside `supporting_scripts/`; the notebooks import them from there automatically.
 
 By default, the optimization cells use `glpk`. If you have a licensed Gurobi installation and want faster solves, you can switch the solver name in the notebook cells from `glpk` to `gurobi`.
