@@ -50,6 +50,8 @@ Install GLPK separately so Pyomo can use the default open-source solver:
 
 - macOS (Homebrew): `brew install glpk`
 - Ubuntu/Debian: `sudo apt-get install glpk-utils`
+- Windows:
+  install via Conda with `conda install -c conda-forge glpk`, or install via Chocolatey with `choco install glpk`
 
 The notebooks in this repository default to `glpk`.
 
