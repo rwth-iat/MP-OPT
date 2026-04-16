@@ -1,0 +1,56 @@
+[
+  {
+    "Inputs": "",
+    "Reaction Type": "Dosing",
+    "Reaction Param": "C: 3.0 litre",
+    "Result": "C: 3.0 litre"
+  },
+  {
+    "Inputs": "C : 3.0 litre",
+    "Reaction Type": "Dosing",
+    "Reaction Param": "B: 3.0 litre",
+    "Result": "C : 3.0 litre, B: 3.0 litre"
+  },
+  {
+    "Inputs": "C : 3.0 litre, B : 3.0 litre",
+    "Reaction Type": "Dosing",
+    "Reaction Param": "A: 4.0 litre",
+    "Result": "C : 3.0 litre, B : 3.0 litre, A: 4.0 litre"
+  },
+  {
+    "Inputs": "C : 3.0 litre, B : 3.0 litre, A : 4.0 litre",
+    "Reaction Type": "Mix",
+    "Reaction Param": "200 rpm / 700 second",
+    "Result": "A_B_C_mixed : 10.0 litre"
+  },
+  {
+    "Inputs": "A_B_C_mixed : 10.0 litre",
+    "Reaction Type": "Usage",
+    "Reaction Param": "1700 second",
+    "Result": "A_B_C_used : 10.0 litre"
+  },
+  {
+    "Inputs": "A_B_C_used : 10.0 litre",
+    "Reaction Type": "Settling",
+    "Reaction Param": "400 second",
+    "Result": "C_B_A_settled : 10.0 litre"
+  },
+  {
+    "Inputs": "C_B_A_settled : 10.0 litre",
+    "Reaction Type": "Separation",
+    "Reaction Param": "A",
+    "Result": "C_B_settled : 6.0 litre"
+  },
+  {
+    "Inputs": "C_B_settled : 6.0 litre",
+    "Reaction Type": "Separation",
+    "Reaction Param": "B",
+    "Result": "C_settled : 3.0 litre"
+  },
+  {
+    "Inputs": "C_settled : 3.0 litre",
+    "Reaction Type": "Separation",
+    "Reaction Param": "C",
+    "Result": "End"
+  }
+]

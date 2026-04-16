@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Optimal Executable Process Plan Generation for Capability-Constrained Modular Plants"
+message: "If you use this repository, please cite the associated paper."
+type: software
+authors:
+  - family-names: "Chen"
+    given-names: "Bowen"
+  - family-names: "Winter"
+    given-names: "Michael"
+  - family-names: "Miny"
+    given-names: "Torben"
+  - family-names: "Kleinert"
+    given-names: "Tobias"
+repository-code: "https://github.com/rwth-iat/MP-OPT"
+license: "MIT"
+version: "0.1.0"
+date-released: "2026-04-15"

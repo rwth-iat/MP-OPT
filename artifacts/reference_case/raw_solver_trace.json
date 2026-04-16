@@ -1,0 +1,140 @@
+[
+  {
+    "Step": 1,
+    "Operation": "Variable Transfer setup (HC20->HC40) for B: x in [0, 10.00]",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 2,
+    "Operation": "Resolve(x=10.00) for Unknown",
+    "Cost": 30.0,
+    "Duration (s)": 100.0
+  },
+  {
+    "Step": 3,
+    "Operation": "Variable Transfer setup (HC30->HC20) for C: x in [0, 10.00]",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 4,
+    "Operation": "Resolve(x=-0.00) for Unknown",
+    "Cost": -0.0,
+    "Duration (s)": -0.0
+  },
+  {
+    "Step": 5,
+    "Operation": "Variable Transfer setup (HC10->HC20) for A: x in [0, 10.00]",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 6,
+    "Operation": "Resolve(x=-0.00) for Unknown",
+    "Cost": -0.0,
+    "Duration (s)": -0.0
+  },
+  {
+    "Step": 7,
+    "Operation": "Variable Transfer setup (HC40->HC20) for B: x in [0, 10.00]",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 8,
+    "Operation": "Resolve(x=-0.00) for Unknown",
+    "Cost": -0.0,
+    "Duration (s)": -0.0
+  },
+  {
+    "Step": 9,
+    "Operation": "Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 1.00 litre)",
+    "Cost": 3.0,
+    "Duration (s)": 10.0
+  },
+  {
+    "Step": 10,
+    "Operation": "Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (B: 2.00 litre)",
+    "Cost": 6.0,
+    "Duration (s)": 20.0
+  },
+  {
+    "Step": 11,
+    "Operation": "Variable Transfer setup (HC20->HC10) for A: x in [0, 1.00]",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 12,
+    "Operation": "Resolve(x=-0.00) for A",
+    "Cost": -0.0,
+    "Duration (s)": -0.0
+  },
+  {
+    "Step": 13,
+    "Operation": "Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 3.00 litre)",
+    "Cost": 9.0,
+    "Duration (s)": 30.0
+  },
+  {
+    "Step": 14,
+    "Operation": "Variable Transfer setup (HC20->HC10) for A: x in [0, 1.00]",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 15,
+    "Operation": "Resolve(x=-0.00) for A",
+    "Cost": -0.0,
+    "Duration (s)": -0.0
+  },
+  {
+    "Step": 16,
+    "Operation": "Stirring (HC20), 150rpm for 30.0s",
+    "Cost": 3.0,
+    "Duration (s)": 30.0
+  },
+  {
+    "Step": 17,
+    "Operation": "Usage (HC20), 3600.0s: None",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 18,
+    "Operation": "Settling (HC20), 300.0s: Settling",
+    "Cost": 1.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 19,
+    "Operation": "Connect(HC20_Out3 -> HC30_In1) for C",
+    "Cost": 2.0,
+    "Duration (s)": 3.0
+  },
+  {
+    "Step": 20,
+    "Operation": "Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC30), (C: 3.00 litre)",
+    "Cost": 3.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 21,
+    "Operation": "Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 2.00 litre)",
+    "Cost": 3.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 22,
+    "Operation": "Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (A: 1.00 litre)",
+    "Cost": 3.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 23,
+    "Operation": "End",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  }
+]

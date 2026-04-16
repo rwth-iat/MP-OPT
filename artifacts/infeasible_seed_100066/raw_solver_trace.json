@@ -1,0 +1,14 @@
+[
+  {
+    "Step": 1,
+    "Operation": "Unfeasible - missing RPM",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  },
+  {
+    "Step": 2,
+    "Operation": "End",
+    "Cost": 0.0,
+    "Duration (s)": 0.0
+  }
+]

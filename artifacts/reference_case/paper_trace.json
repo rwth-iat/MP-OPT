@@ -1,0 +1,54 @@
+{
+  "representation": "paper_trace_grouped",
+  "published_total_steps": 17,
+  "rows": [
+    {
+      "step_range": "1--2",
+      "action": "Connect HC20->HC40 and dose 10 L of B into HC40 as a buffer."
+    },
+    {
+      "step_range": "3--5",
+      "action": "Connect HC30->HC20, HC10->HC20, and HC40->HC20 to prepare all inflows to HC20."
+    },
+    {
+      "step_range": "6",
+      "action": "Dose 1 L of A from HC10 to HC20."
+    },
+    {
+      "step_range": "7",
+      "action": "Dose 2 L of B from HC40 to HC20."
+    },
+    {
+      "step_range": "8",
+      "action": "Dose 3 L of C from HC30 to HC20."
+    },
+    {
+      "step_range": "9--12",
+      "action": "Execute stirring at 150 rpm, usage, and settling in HC20."
+    },
+    {
+      "step_range": "13",
+      "action": "Connect HC20->HC30 for later C recovery."
+    },
+    {
+      "step_range": "14",
+      "action": "Separate 3 L of C from HC20 to HC30."
+    },
+    {
+      "step_range": "15",
+      "action": "Separate 2 L of B from HC20 to HC40."
+    },
+    {
+      "step_range": "16",
+      "action": "Separate 1 L of A from HC20 to HC10."
+    },
+    {
+      "step_range": "17",
+      "action": "Finish with End."
+    }
+  ],
+  "notes": [
+    "This grouped trace mirrors the operation table reported in the paper.",
+    "The raw solver path retained in artifacts uses a lower-level symbolic-state representation and may contain more internal transitions."
+  ]
+}

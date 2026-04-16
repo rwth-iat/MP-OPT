@@ -1,0 +1,21 @@
+{
+  "status": "SKIPPED_CAPABILITY_MISMATCH",
+  "case_name": "seed_100066",
+  "seed": 100066,
+  "bfs_feasible": false,
+  "capability_mismatch": true,
+  "skip_reason": "Missing required stirring RPMs: 200",
+  "missing_mix_rpms": [
+    "200"
+  ],
+  "solver": "none",
+  "objective_value": null,
+  "time_s": 0.004221499999403022,
+  "output_dir": "artifacts/infeasible_seed_100066",
+  "raw_solver_trace_path": "artifacts/infeasible_seed_100066/raw_solver_trace.json",
+  "corpus_path": "artifacts/infeasible_seed_100066/fallback_corpus.jsonl",
+  "reaction_rules_path": "artifacts/infeasible_seed_100066/seed_100066_reaction_rules.json",
+  "general_recipe_xml_path": null,
+  "general_recipe_json_path": null,
+  "paper_trace_path": null
+}

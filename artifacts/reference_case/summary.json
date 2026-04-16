@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "case_name": "reference_case",
+  "seed": null,
+  "bfs_feasible": true,
+  "capability_mismatch": false,
+  "skip_reason": null,
+  "missing_mix_rpms": [],
+  "solver": "gurobi",
+  "objective_value": 140.5,
+  "time_s": 26.45498416700866,
+  "output_dir": "artifacts/reference_case",
+  "raw_solver_trace_path": "artifacts/reference_case/raw_solver_trace.json",
+  "corpus_path": "artifacts/reference_case/operation_sequence_corpus.jsonl",
+  "reaction_rules_path": "artifacts/reference_case/reference_case_reaction_rules.json",
+  "general_recipe_xml_path": "artifacts/reference_case/reference_case_general_recipe.xml",
+  "general_recipe_json_path": "artifacts/reference_case/reference_case_general_recipe.json",
+  "paper_trace_path": "artifacts/reference_case/paper_trace.json",
+  "paper_trace_published_steps": 17
+}

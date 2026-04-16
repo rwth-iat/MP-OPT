@@ -1,0 +1,286 @@
+{
+  "ID": "GeneralRecipe_DC_DA_DB_M250_U_S_SepB_SepA_SepC",
+  "Description": "General Recipe auto-generated from schedule",
+  "Inputs": [
+    {
+      "ID": "Educt_C001/04.16/14:12:09.7/",
+      "Description": "Ingredient C",
+      "Quantity": "2",
+      "DataType": "double",
+      "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+      "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+    },
+    {
+      "ID": "Educt_A002/04.16/14:12:09.7/",
+      "Description": "Ingredient A",
+      "Quantity": "5",
+      "DataType": "double",
+      "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+      "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+    },
+    {
+      "ID": "Educt_B003/04.16/14:12:09.7/",
+      "Description": "Ingredient B",
+      "Quantity": "3",
+      "DataType": "double",
+      "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+      "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+    }
+  ],
+  "Outputs": [
+    {
+      "ID": "Product001/04.16/14:12:09.7/",
+      "Description": "Mixed product",
+      "Quantity": "10",
+      "DataType": "double",
+      "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+      "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+    }
+  ],
+  "Intermediates": [
+    {
+      "ID": "IntermediateAfterUsage001/04.16/14:12:09.7/",
+      "Description": "Mixture after usage",
+      "Quantity": "10",
+      "DataType": "double",
+      "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+      "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+    }
+  ],
+  "ProcessElements": [
+    {
+      "ID": "Dosing_C001/04.16/14:12:09.7/",
+      "Description": "Dosing C",
+      "Parameters": [
+        {
+          "ID": "Dosing_Amount001/04.16/14:12:09.7/",
+          "Description": "Amount of Dosing",
+          "ValueString": "2",
+          "DataType": "double",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+          "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+        }
+      ],
+      "SemanticDescription": "http://www.iat.rwth-aachen.de/capability-ontology#Dosing"
+    },
+    {
+      "ID": "Dosing_A002/04.16/14:12:09.7/",
+      "Description": "Dosing A",
+      "Parameters": [
+        {
+          "ID": "Dosing_Amount002/04.16/14:12:09.7/",
+          "Description": "Amount of Dosing",
+          "ValueString": "5",
+          "DataType": "double",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+          "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+        }
+      ],
+      "SemanticDescription": "http://www.iat.rwth-aachen.de/capability-ontology#Dosing"
+    },
+    {
+      "ID": "Dosing_B003/04.16/14:12:09.7/",
+      "Description": "Dosing B",
+      "Parameters": [
+        {
+          "ID": "Dosing_Amount003/04.16/14:12:09.7/",
+          "Description": "Amount of Dosing",
+          "ValueString": "3",
+          "DataType": "double",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+          "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+        }
+      ],
+      "SemanticDescription": "http://www.iat.rwth-aachen.de/capability-ontology#Dosing"
+    },
+    {
+      "ID": "Mixing_of_Liquids001/04.16/14:12:09.7/",
+      "Description": "Mixing_of_Liquids",
+      "Parameters": [
+        {
+          "ID": "Revolutions_per_minute001/04.16/14:12:09.7/",
+          "Description": "Revolutions per minute",
+          "ValueString": "250",
+          "DataType": "int",
+          "UnitOfMeasure": "http://qudt.org/vocab/unit/REV-PER-MIN",
+          "Key": "http://qudt.org/vocab/quantitykind/RotationalVelocity"
+        },
+        {
+          "ID": "Mixing_Duration001/04.16/14:12:09.7/",
+          "Description": "Duration of the process step mixing",
+          "ValueString": "800",
+          "DataType": "int",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/second",
+          "Key": "http://www.w3.org/2006/time#Duration"
+        }
+      ],
+      "SemanticDescription": "http://www.iat.rwth-aachen.de/capability-ontology#MixingOfLiquids"
+    },
+    {
+      "ID": "Usage001/04.16/14:12:09.7/",
+      "Description": "Usage",
+      "Parameters": [
+        {
+          "ID": "Usage_Duration001/04.16/14:12:09.7/",
+          "Description": "Duration of the process step usage",
+          "ValueString": "3800",
+          "DataType": "int",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/second",
+          "Key": "http://www.w3.org/2006/time#Duration"
+        }
+      ],
+      "SemanticDescription": "http://www.iat.rwth-aachen.de/capability-ontology#Usage"
+    },
+    {
+      "ID": "Settling001/04.16/14:12:09.7/",
+      "Description": "Settling",
+      "Parameters": [
+        {
+          "ID": "Settling_Duration001/04.16/14:12:09.7/",
+          "Description": "Duration of the process step settling",
+          "ValueString": "200",
+          "DataType": "int",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/second",
+          "Key": "http://www.w3.org/2006/time#Duration"
+        }
+      ],
+      "SemanticDescription": "http://www.iat.rwth-aachen.de/capability-ontology#Settling"
+    },
+    {
+      "ID": "Separation_B001/04.16/14:12:09.7/",
+      "Description": "Separation of B",
+      "Parameters": [
+        {
+          "ID": "Separation_Volume001/04.16/14:12:09.7/",
+          "Description": "Volume to separate",
+          "ValueString": "3",
+          "DataType": "double",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+          "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+        },
+        {
+          "ID": "Separation_Duration001/04.16/14:12:09.7/",
+          "Description": "Duration of the process step separation",
+          "ValueString": "15",
+          "DataType": "int",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/second",
+          "Key": "http://www.w3.org/2006/time#Duration"
+        }
+      ],
+      "SemanticDescription": "http://www.iat.rwth-aachen.de/capability-ontology#Separation"
+    },
+    {
+      "ID": "Separation_A002/04.16/14:12:09.7/",
+      "Description": "Separation of A",
+      "Parameters": [
+        {
+          "ID": "Separation_Volume002/04.16/14:12:09.7/",
+          "Description": "Volume to separate",
+          "ValueString": "5",
+          "DataType": "double",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+          "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+        },
+        {
+          "ID": "Separation_Duration002/04.16/14:12:09.7/",
+          "Description": "Duration of the process step separation",
+          "ValueString": "20",
+          "DataType": "int",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/second",
+          "Key": "http://www.w3.org/2006/time#Duration"
+        }
+      ],
+      "SemanticDescription": "http://www.iat.rwth-aachen.de/capability-ontology#Separation"
+    },
+    {
+      "ID": "Separation_C003/04.16/14:12:09.7/",
+      "Description": "Separation of C",
+      "Parameters": [
+        {
+          "ID": "Separation_Volume003/04.16/14:12:09.7/",
+          "Description": "Volume to separate",
+          "ValueString": "2",
+          "DataType": "double",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/litre",
+          "Key": "http://qudt.org/vocab/quantitykind/LiquidVolume"
+        },
+        {
+          "ID": "Separation_Duration003/04.16/14:12:09.7/",
+          "Description": "Duration of the process step separation",
+          "ValueString": "8",
+          "DataType": "int",
+          "UnitOfMeasure": "http://si-digital-framework.org/SI/units/second",
+          "Key": "http://www.w3.org/2006/time#Duration"
+        }
+      ],
+      "SemanticDescription": "http://www.iat.rwth-aachen.de/capability-ontology#Separation"
+    }
+  ],
+  "DirectedLinks": [
+    {
+      "ID": "0/04.16/14:12:09.7/",
+      "FromID": "Educt_C001/04.16/14:12:09.7/",
+      "ToID": "Dosing_C001/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "1/04.16/14:12:09.7/",
+      "FromID": "Educt_A002/04.16/14:12:09.7/",
+      "ToID": "Dosing_A002/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "2/04.16/14:12:09.7/",
+      "FromID": "Educt_B003/04.16/14:12:09.7/",
+      "ToID": "Dosing_B003/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "3/04.16/14:12:09.7/",
+      "FromID": "Dosing_C001/04.16/14:12:09.7/",
+      "ToID": "Mixing_of_Liquids001/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "4/04.16/14:12:09.7/",
+      "FromID": "Dosing_A002/04.16/14:12:09.7/",
+      "ToID": "Mixing_of_Liquids001/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "5/04.16/14:12:09.7/",
+      "FromID": "Dosing_B003/04.16/14:12:09.7/",
+      "ToID": "Mixing_of_Liquids001/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "6/04.16/14:12:09.7/",
+      "FromID": "Mixing_of_Liquids001/04.16/14:12:09.7/",
+      "ToID": "Product001/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "7/04.16/14:12:09.7/",
+      "FromID": "Product001/04.16/14:12:09.7/",
+      "ToID": "Usage001/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "8/04.16/14:12:09.7/",
+      "FromID": "Usage001/04.16/14:12:09.7/",
+      "ToID": "IntermediateAfterUsage001/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "9/04.16/14:12:09.7/",
+      "FromID": "IntermediateAfterUsage001/04.16/14:12:09.7/",
+      "ToID": "Settling001/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "10/04.16/14:12:09.7/",
+      "FromID": "Settling001/04.16/14:12:09.7/",
+      "ToID": "Separation_B001/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "11/04.16/14:12:09.7/",
+      "FromID": "Separation_B001/04.16/14:12:09.7/",
+      "ToID": "Separation_A002/04.16/14:12:09.7/"
+    },
+    {
+      "ID": "12/04.16/14:12:09.7/",
+      "FromID": "Separation_A002/04.16/14:12:09.7/",
+      "ToID": "Separation_C003/04.16/14:12:09.7/"
+    }
+  ]
+}
